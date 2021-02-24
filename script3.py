@@ -8,7 +8,7 @@ def RepresentsInt(s):
 
 rec = input()
 l1 = [x for x in rec.split('=')]
-if not ' ' in rec:
+if ' ' not in rec:
     if RepresentsInt(l1[1]):
         for i in ['+', '-', '/', '*']:
             if i in l1[0]:

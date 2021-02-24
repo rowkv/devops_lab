@@ -26,8 +26,8 @@ def freverse(l):
     return l.reverse()
 
 
-l = list()
+myList = list()
 n = int(input())
 for x in range(n):
     comList = [item for item in input().split()]
-    eval('f' + comList[0] + '(' + 'l' + ',' + ', '.join(map(str,comList[1:])) + ')')
+    eval('f' + comList[0] + '(' + 'myList' + ',' + ', '.join(map(str, comList[1:])) + ')')
