@@ -4,7 +4,7 @@ import requests
 def get_pulls(state):
     pulls = list()
     if state in ('accepted', 'needs work'):
-        payload = {'per_page': 100}
+        payload = {'state':'all', 'per_page': 100}
         response = requests.get('https://api.github.com/repos/alenaPy/devops_lab/pulls',
                                 params=payload)
         for item in response.json():
